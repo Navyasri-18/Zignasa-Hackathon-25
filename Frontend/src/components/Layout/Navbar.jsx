@@ -47,7 +47,7 @@ export default function Navbar() {
           <>
             {/* Show username if available, else fallback to email */}
             <span className="text-sm text-gray-600">
-              {user?.username ? `@${user.username}` : user?.email}
+              {user?.username ? `${user.username}` : user?.email}
             </span>
 
             <button
